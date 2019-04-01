@@ -1,0 +1,130 @@
+﻿<?xml version="1.0"?>
+<portal>
+  <!-- COMBOS -->
+  <!--Genero-->
+  <comboBox name="genero" label="Género:  ">
+    <option value="accion">Acción</option>
+    <option value="terror">Terror</option>
+    <option value="suspenso">Suspenso</option>
+    <option value="comedia">Comedia</option>
+    <option value="romance">Romance</option>
+    <option value="drama">Drama</option>
+    <option value="fantasia">Fantasia</option>
+    <option value="ciencia_ficcion">Ciencia ficción</option>
+    <option value="biografico">Biográfico</option>
+    <option value="deportes">Deportes</option>
+    <option value="politico">Politico</option>
+    <option value="economico">Económico</option>
+    <option value="policial">Policial</option>
+  </comboBox>
+  <!--Dia-->
+  <comboBox name="DIA" label="Día:  ">
+    <option value="seleccione">Seleccione  </option>
+    <option value="1">01</option>
+    <option value="2">02</option>
+    <option value="3">03</option>
+    <option value="4">04</option>
+    <option value="5">05</option>
+    <option value="6">06</option>
+    <option value="7">07</option>
+    <option value="8">08</option>
+    <option value="9">09</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+  </comboBox>
+  <!--Mes-->
+  <comboBox name="MES" label="Mes:  ">
+    <option value="seleccione">Seleccione</option>
+    <option value="enero">Enero</option>
+    <option value="Febrero">Febrero</option>
+    <option value="marzo">Marzo</option>
+    <option value="abril">Abril</option>
+    <option value="mayo">Mayo</option>
+    <option value="junio">Junio</option>
+    <option value="julio">julio</option>
+    <option value="agosto">Agosto</option>
+    <option value="septiembre">Septiembre</option>
+    <option value="octubre">octubre</option>
+    <option value="noviembre">noviembre</option>
+    <option value="diciembre">diciembre</option>
+  </comboBox>
+  <!--Idioma-->
+  <comboBox name="IDIOMA" label="Idioma:  ">
+    <option value="seleccione">Seleccione</option>
+    <option value="español">Español</option>
+    <option value="ingles">Ingles</option>
+  </comboBox>
+  <!--Traduccion-->
+  <comboBox name="TRADUCCION" label="Traduccion:  ">
+    <option value="seleccione">Seleccione</option>
+    <option value="si">Si</option>
+    <option value="no">No</option>
+  </comboBox>
+  <input>
+    <!--General-->
+    <item name="titulo"  >Título: </item>
+    <item name="codigo"  >Código: </item>
+  </input>
+  
+  <input>
+    <!--Autor-->
+	<autor>
+      <item value="NOMBRE">Nombre: </item>
+      <item value="APELLIDO">Apellido: </item>
+      <item value="NACIONALIDAD">Nacionalidad: </item>
+      <item value="CIUDAD_DE_NACIMIENTO">Ciudad de nacimiento: </item>
+    </autor>
+  </input>
+  
+  <input>
+    <!--Autor-->
+	<autor>
+      <item value="anio">Año:</item>    
+	</autor>
+  </input>
+  
+  <input>
+    <!--Caracteristicas-->
+    <caracteristicas1 label="Características: ">
+      <item value="ORIGEN">Origen: </item>
+      <item value="AÑO">Año: </item>
+      <item value="CANTIDAD_DE_PAGINAS">Cantidad de páginas: </item>
+	  <item value="EDITORIAL">Editorial: </item>
+      <item value="IDIOMA_ORIGINAL">Idioma original: </item>
+	  
+      
+    </caracteristicas1>
+	<caracteristicas2>
+		
+      <item value="PALABRAS_ClAVE1"> Palabras clave: </item>
+	  <item value="PALABRAS_ClAVE2">  </item>
+	  <item value="PALABRAS_ClAVE3">  </item>
+	  <item value="PALABRAS_ClAVE4"> </item>
+	  <item value="PALABRAS_ClAVE5"> </item>
+	  
+	</caracteristicas2>
+	<caracteristicas3>
+      <item value="SINOPSIS">Sinopsis: </item>	  
+	</caracteristicas3>
+  </input>
+</portal>

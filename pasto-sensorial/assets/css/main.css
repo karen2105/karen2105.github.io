@@ -1,0 +1,1144 @@
+@import url('https://fonts.googleapis.com/css?family=Copse|Quicksand:400,500');
+@import url("font-awesome.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+h1 {
+  padding-top: 4%;
+  font-family: 'Copse', cursive;
+  font-size: 65px;
+  color: #FFF;
+  text-align: left;
+}
+h2 {
+  padding-top: 7%;
+  font-family: 'Copse', cursive;
+  font-size: 50px;
+  color: #FFF;
+  text-align: center;
+}
+h3 {
+  font-family: 'Quicksand', cursive;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40%;
+  color: #FFF;
+  text-align: left;
+  padding-left: 15px;
+}
+h4 {
+  font-family: 'Copse', cursive;
+  font-size: 30px;
+  font-weight: 400;
+  color: #FFF;
+}
+ol, ul {
+  list-style: none;
+}
+body, input, select, textarea {
+  font-family: 'Quicksand', cursive;
+  font-size: 13pt;
+  font-weight: 400;
+}
+body {
+  max-width:2200px;
+  background: #fff;
+  overflow-x: hidden !important;
+  position: relative; /* required */
+}
+
+#sectionInfo {
+  min-height: 1000px;
+}
+#headerGallery {
+  height: 100vh;  
+  width: 100vw;
+  max-height:1600px;  
+  background: white;
+}
+
+#header {
+  height: 100vh;  
+  width: 100%;
+  max-height:1600px;  
+  background: transparent url(images/bg.jpg) top right no-repeat;
+  background-size: cover;
+}
+
+a {
+  -moz-transition: border-color 0.2s ease-in-out;
+  -webkit-transition: border-color 0.2s ease-in-out;
+  -ms-transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
+  color: inherit;
+  outline: 0;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: none !important;
+}
+input[type="text"] {
+  width: 250px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #999;
+}
+textarea {
+  resize: none;
+  background: transparent;
+  border: 1px solid #999;
+  font-size: 14px;
+  width: 85%;
+}
+/* Icon */
+
+.icon {
+  text-decoration: none;
+  position: relative;
+}
+.icon:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+.icon > .label {
+  display: none;
+}
+#valuePasto {
+  margin-left: 35px;
+}
+#callToAction {
+  bottom: -18%;
+}
+#callToAction h3 {
+  text-align: center !important;
+}
+#createBtn, #knowBtn {
+  height: auto;
+  width: auto;
+  margin-bottom: 18px;
+  margin-top: 10%;
+}
+#createBtn a:hover, #knowBtn a:hover {
+  background: #BE1E2D !important;
+}
+ 
+#knowBtn a, #createBtn a {
+  border: solid 4px #BE1E2D !important;
+  border-radius: 5px;
+  padding: 15px 20px;
+  text-align: center;
+  font-family: 'Quicksand', cursive;
+  font-weight: 500;
+  color: white;
+  font-size: 26px;
+}
+#overlayCredits {
+  background-attachment: fixed, fixed;
+  background-image: url("images/overlay-pattern.png"), url("images/overlayCredits.svg");
+  background-position: top left, center center;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+#overlayCredits h2 {
+  color: #FFF;
+  text-align: left;
+}
+#overlayCredits p {
+  color: #FFF;
+  text-align: left;
+}
+#logo img {
+  max-width: 90%;
+  height: auto;
+}
+#logo {
+  position: absolute;
+  z-index: 100;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -moz-animation: overlay 1.5s 1.5s forwards;
+  -webkit-animation: overlay 1.5s 1.5s forwards;
+  -ms-animation: overlay 1.5s 1.5s forwards;
+  animation: overlay 1.5s 1.5s forwards;
+  opacity: 0;
+}
+#logo p {
+  font-size: 25pt;
+}
+#mainMenu ul, #mainMenuGalery ul {
+  width: 100%;
+}
+#mainMenu li {
+  width: 20%;
+  text-align: center;
+  border-right: solid 1px #666;
+}
+.navbar-default {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: #fff !important;
+}
+.mainNavBar {
+  bottom: -93vh;
+}
+
+#mainMenuGalery li {
+  width: 33.33%;
+  text-align: center;
+  border-right: solid 1px #666;
+}
+
+#pastoSensorial h2 {
+  color: rgba(232, 10, 121, 0.9);
+  text-align: left;
+}
+.navbar-default .navbar-nav > #pastoSensorialNav > a:hover, .navbar-default .navbar-nav > #navRainbow > a:hover {
+  background-color: rgba(232, 10, 121, 0.9) !important;
+}
+.navbar-default .navbar-nav > #carnivalNav > a:hover {
+  background-color: rgba(226, 6, 19, 0.9) !important;
+}
+.navbar-default .navbar-nav > #partOfNav > a:hover, .navbar-default .navbar-nav > #navColombianStreet > a:hover {
+  background-color: rgba(21, 88, 186, 0.9) !important;
+}
+.navbar-default .navbar-nav > #creditsNav > a:hover {
+  background-color: rgba(182, 221, 18, 0.9) !important;
+}
+.navbar-default .navbar-nav > #contactNav > a:hover, .navbar-default .navbar-nav > #navMuseo > a:hover {
+  background-color: rgba(255, 157, 0, 0.9) !important;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #CFCFCF !important;
+  font-weight: 500 !important;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #FFF !important;
+  font-weight: 500 !important;
+}
+.navbar-default .navbar-nav > #pastoSensorialNav.active > a {
+  background-color: rgba(232, 10, 121, 0.9) !important;
+}
+.navbar-default .navbar-nav > #carnivalNav.active > a {
+  background-color: rgba(226, 6, 19, 0.9) !important;
+}
+.navbar-default .navbar-nav > #partOfNav.active > a {
+  background-color: rgba(21, 88, 186, 0.9) !important;
+}
+.navbar-default .navbar-nav > #creditsNav.active > a {
+  background-color: rgba(182, 221, 18, 0.9) !important;
+}
+.navbar-default .navbar-nav > #contactNav.active > a {
+  background-color: rgba(255, 157, 0, 0.9) !important;
+}
+.navbar-default .navbar-nav > .active > a {
+  color: #FFF !important;
+  font-weight: 500 !important;
+}
+#bnwCarnival h2 {
+  color: rgba(226, 6, 19, 0.9) !important;
+}
+#secondParagColombia h3 {
+  color: rgba(226, 6, 19, 0.9) !important;
+}
+#secondParagColombia {
+  padding-top: 8%;
+}
+#bnwCarnival {
+  max-height: 720px;
+  margin-top: -40px;
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(bottom, #FFF, #FBFBFB); /*Safari 5.1-6*/
+  background: -o-linear-gradient(bottom, #FFF, #FBFBFB); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(bottom, #FFF, #FBFBFB); /*Fx 3.6-15*/
+  background: linear-gradient(to bottom, #FFF, #FBFBFB);
+}
+
+#pastoSensorial {
+  max-height: 770px;
+  background-color: #FFF;
+  padding: 2% 50px;
+  color: #0B0B0B;
+}
+
+#collaborators {
+  height: 370px;
+  width: 100%;
+  border: none;
+  padding: 10px;
+}
+#collaborators h2 {
+  color: rgba(182, 221, 18, 0.9) !important;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 2%;
+  font-size: 45px;
+}
+
+.containerSupporters {
+ padding: 1%;
+ max-width: 80%;
+ margin: auto;
+}
+.containerSupporters1 {
+ padding: 1%;
+ max-width: 80%;
+}
+
+.containerSupporters img {
+  padding: 0 60px;
+}
+
+.paragraph {
+  padding: 20px;
+}
+
+.aire {
+  height: 20px;
+}
+/*************************
+********Twitter CSS*******
+**************************/
+#twitterBanner {
+  width: 100%;
+  height: 350px;
+  background: Transparent url(../images/pasto-twitter.png) center top no-repeat;
+  z-index: 10;
+  padding-top: 56px;
+}
+.twitter-icon {
+  position: relative;
+  z-index: 15;
+  color: #fff;
+}
+.twitter-icon .fa-twitter {
+  background-color: #00aced;
+  font-size: 55px;
+  height: 100px;
+  width: 100px;
+  line-height: 65px;
+  border-radius: 50%;
+  position: relative;
+}
+.twitter-icon .fa-twitter:after {
+  position: absolute;
+  content: "";
+  border-width: 17px;
+  border-style: solid;
+  bottom: -27px;
+  border-color: #00aced transparent transparent;
+  left: 33px;
+}
+.twI {
+  text-align: center;
+  padding-top: 25px;
+  margin-left: 41%;
+  margin-top: 15px;
+}
+.twImg {
+  height: 120px;
+  width:  auto;
+  margin-left: 41%;
+}
+.twitter-icon a:hover h4 {
+  color:rgba(182, 221, 18, 0.9) !important;
+}
+.twitter-icon h4 a:hover {
+  color:rgba(182, 221, 18, 0.9) !important;
+}
+#letra img {
+  vertical-align: middle;
+  width: auto;
+  height: 65px;
+  margin-top: 10px;
+}
+.evento h4 {
+  font-size: 25px !important;
+  color: #000 !important;
+}
+.evento:hover h4 {
+  font-size: 25px !important;
+  color: #F06 !important;
+}
+#credits {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: url(../images/pasto-credits.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#social_media li {
+  display: inline-block;
+  width: 4em;
+  text-decoration: none;
+  padding: 15px 0;
+}
+#social_media a {
+  border: 0;
+  display: inline-block;
+}
+#social_media a {
+  border-radius: 100%;
+  border: solid 1px #fff;
+  opacity: 0.5;
+  display: block;
+  font-size: 1.5em;
+  height: 2em;
+  text-align: center;
+  width: 2em;
+  padding-top: 0.2em;
+  text-decoration: none;
+}
+#social_media .twitterBtn:hover {
+  border-radius: 100%;
+  border-color: #55acee;
+  opacity: 1;
+  color: #55acee;
+}
+#social_media .facebookBtn:hover {
+  border-radius: 100%;
+  border-color: #3b5998;
+  opacity: 1;
+  color: #3b5998;
+}
+#social_media .mailBtn:hover {
+  border-radius: 100%;
+  border-color: #e95950;
+  opacity: 1;
+  color: #e95950;
+}
+footer {
+  background: #212121 url(../images/footer.png) center bottom no-repeat;
+  color: #D0D0D0;
+  text-align: left;
+  width: 100%;
+  height: auto;
+  font-size: 15px;
+  padding: 10px;
+  min-height: 256px;
+}
+#map {
+  height: 237px;
+}
+
+#letraFooter {
+  padding-top: 20px;
+  height: 237px;
+  padding-left: 70px;
+}
+#copyRight {
+  padding: 15px;
+  background-color: #1E1E1E;
+  color: #AA9B4C;
+  font-size: 12px;
+}
+#contactForm {
+  height: 237px;
+}
+#contactForm p {
+  color: #666;
+  font-size: 13px;
+}
+.btns {
+  float: right;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: transparent;
+  border: 1px solid #666;
+  padding: 5px 20px;
+  font-size: 13px;
+  color: #666;
+  margin-top: -10px;
+}
+.btns:hover {
+  border: 1.5px solid #FFEC00;
+  color: #FFEC00;
+}
+#controlContainer {
+  padding-top: 2%;
+  padding-right: 5%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.container#footerDecor {
+  height: 30px;
+}
+#cuadroApp .container .row:nth-child(1) {
+  height: 85%;
+}
+#cuadroApp .container .row:nth-child(2) {
+  height: 15%;
+}
+#decoracion {
+  width: 100%;
+  height: 95px;
+  background: url(../images/pasto-footer.png) center top no-repeat;
+  top: -63px;
+}
+.bulletPoints {
+  padding-left: 20px;
+  font-size: 12pt;
+}
+#app {
+  width: 100%;
+}
+#cuadroApp {
+
+  min-height: 80vh;
+  max-height: 700px;
+}
+#bePart {
+  height: 110vh;
+  max-height:1600px;
+}
+#bePart h2 {
+  color: rgba(21, 88, 186, 0.9) !important;
+}
+#textBePart {
+  text-align: center;
+  margin-bottom:3%;
+}
+.dias {
+  min-height: 200px;
+  font-size: 1em;
+  text-align: center;
+}
+#appEmbed {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.carousel-indicators {
+  margin-bottom: -5px !important;
+}
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;/* Control buttons  */
+  /* Previous button  */
+  /* Next button  */
+  /* Changes the position of the indicators */
+  /* Changes the color of the indicators */
+}
+.carousel-control {
+  color: rgba(255, 157, 0, 0.9) !important;
+}
+.carousel-control:focus {
+ color: color: rgba(255, 157, 0, 0.9) !important;
+}
+#quote-carousel .carousel-control {
+  background: none;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 50px;
+}
+#quote-carousel .carousel-control.left {
+  left: -60px;
+}
+#quote-carousel .carousel-control.right {
+  right: -60px;
+}
+#quote-carousel .carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  cursor: pointer;
+  opacity: 0.7;
+  overflow: hidden;
+  transition: all 0.4s;
+  background-color: #E3007E !important;
+  border: none !important;
+  border-radius: 10px !important;
+}
+#quote-carousel .carousel-indicators .active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  overflow: hidden;
+  background-color: #F90 !important;
+  border: none !important;
+  border-radius: 0px !important;
+}
+.carousel-inner {
+  min-height: 400px;
+}
+.carousel-control i {
+  margin-top: 50%;
+}
+#imgMapa {
+  height: 100vh;
+}
+#imgMapa img {
+  height: 100%;
+  width: auto
+}
+#introColombia {
+  height: 100vh;
+}
+#introColombia #textInt {
+  max-height: 63%;
+  overflow-y: auto;
+}
+ #textInt::-webkit-scrollbar {
+ width: 1em;
+}
+ #textInt::-webkit-scrollbar-track {
+ -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+}
+ #textInt::-webkit-scrollbar-thumb {
+ background-color: darkgrey;
+ outline: 1px solid slategrey;
+}
+#bannerInt {
+  background: white url(../images/backgrounds.jpg) center top repeat fixed;
+  padding: 5%;
+}
+#imgSecond {
+  height: 100vh;
+  padding-top: 5%;
+  transition: 0.3s;
+}
+#imgSecond:hover {
+  opacity: 0.7;
+}
+#infographic {
+  max-height: 80%;
+  width: 100%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.modal-body h3 {
+  color: rgba(226, 6, 19, 0.9) !important;
+}
+.fotos img {
+  padding: 2px;
+  width: 49%;
+}
+.aire hr {
+  height: 6px;
+  background: url(../images/hr-pasto.png) repeat-x 0 0;
+  border: 0;
+}
+#bannerInt2 img {
+  margin: 20px;
+}
+#bannerInt2 h2 {
+  color: rgba(226, 6, 19, 0.9) !important;
+  padding-top: 1% !important;
+}
+#bannerInt2 {
+  padding: 4% 0;
+  text-align: center;
+  background: #A1E9E6 url(../images/pattern.png) center top repeat fixed;
+}
+#mainImage1 {
+  padding: 10% 3%;
+  max-width: 90%;
+}
+#mainImage1 img {
+  max-width: 80%;
+}
+#bannerInt2 img:hover {
+  -webkit-animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+  -moz-animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+  -ms-animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+  -ms-transform: translate3d(0, 0, 0) scale(1.15);
+  -webkit-transform: translate3d(0, 0, 0) scale(1.15);
+  -moz-transform: translate3d(0, 0, 0) scale(1.15);
+  transform: translate3d(0, 0, 0) scale(1.15);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+ @keyframes shake {
+  10%, 90% {
+  -moz-transform: translate3d(-1px, 0, 0) scale(1.15);
+  -webkit-transform: translate3d(-1px, 0, 0) scale(1.15);
+  -ms-transform: translate3d(-1px, 0, 0) scale(1.15);
+  transform: translate3d(-1px, 0, 0) scale(1.15);
+  }
+  20%, 80% {
+  -moz-transform: translate3d(2px, 0, 0) scale(1.15);
+  -webkit-transform: translate3d(2px, 0, 0) scale(1.15);
+  -ms-transform: translate3d(2px, 0, 0) scale(1.15);
+  transform: translate3d(2px, 0, 0) scale(1.15);
+  }
+  30%, 50%, 70% {
+  -moz-transform: translate3d(-4px, 0, 0) scale(1.15);
+  -webkit-transform: translate3d(-4px, 0, 0) scale(1.15);
+  -ms-transform: translate3d(-4px, 0, 0) scale(1.15);
+  transform: translate3d(-4px, 0, 0) scale(1.15);
+  }
+  40%, 60% {
+  -moz-transform: translate3d(4px, 0, 0) scale(1.15);
+  -webkit-transform: translate3d(4px, 0, 0) scale(1.15);
+  -ms-transform: translate3d(4px, 0, 0) scale(1.15);
+  transform: translate3d(4px, 0, 0) scale(1.15);
+  }
+}
+
+#avatarCanvas {
+  width: 500px;
+  height: 500px;
+}
+#controlContainer {
+  font-family: 'Quicksand', cursive;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0px;
+  font-weight: 300;
+  color: #757575;
+}
+.selector-left, .selector-right, .selector-middle {
+  padding: 15px;
+  display: table-cell;
+  text-align: center;
+}
+.selector-left {
+  width: 20%;
+  background: url("../img/arrowLeft.png") center;
+  background-position: 30% 50%;
+  background-repeat: no-repeat;
+}
+.selector-right {
+  width: 20%;
+  background: url("../img/arrowRight.png") center;
+  background-position: 70% 50%;
+  background-repeat: no-repeat;
+}
+.selector-right, .selector-left {
+  cursor: pointer;
+}
+.selector-middle {
+  width: 60%;
+}
+.selector-group, .type-group {
+  width: 100%;
+  display: table;
+  margin-top: 7px;
+}
+.selector-group .selector-middle {
+  color: white;
+  background-color: rgba(21, 88, 186, 0.9);
+}
+.type-control {
+  padding: 10px;
+  width: 33.33%;
+  display: inline-block;
+  background-color: #DEDEDE;
+  display: table-cell;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  background-color: inherit;
+  border: none;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+  background-color: inherit;
+  border: none;
+}
+.type-control.active {
+  background-color: #F2F2F2;
+  border-top: 4px solid rgba(182, 221, 18, 0.9);
+  border-bottom: 1px solid rgba(182, 221, 18, 0.9);
+  border-left: 1px solid rgba(182, 221, 18, 0.9);
+  border-right: 1px solid rgba(182, 221, 18, 0.9);
+}
+.type-control > a {
+  text-align: center;
+  text-decoration: none;
+}
+.type-control > a:hover {
+  text-align: center;
+  text-decoration: none;
+}
+.controls-center {
+  text-align: center;
+  font-family: 'Quicksand', cursive;
+}
+.controls-center > button {
+  font-size: 1.5em;
+  background-color: inherit;
+  color: #D73365;
+}
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+  #header{
+    margin: 0px !important;
+    padding: 0px !important;
+    min-height: 100vh !important;   
+  }
+
+  #bePart{
+    height: 130vh;
+  }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #header {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+      
+  #bePart {
+    height: 130vh;
+  }
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  h3{line-height: 100%;}  
+      #header{
+    margin: 0px !important;
+    padding: 20px;
+  }
+      
+      h1 {
+    font-size: 3.5em;
+  }
+  h1 span {
+    font-size: 1em !important;
+  }
+    #pastoSensorial {
+    max-height: 10000px !important;
+    text-align: center;
+  }
+
+  #imgSecond{
+  height:60vh;}
+  footer{
+    text-align:center;
+  }
+  #credits{
+    height:60vh;
+  }
+
+  #mainCanvas{
+    margin: 0px 6%;
+  }
+  #bePart {
+      height: 120vh;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  h3{line-height: 100%;}  
+  #cuadroApp{min-height: 1000px;}
+  #nombres {
+    column-count: 2;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  #nombres {
+    column-count: 1;
+  }
+  #sectionInfo {
+      min-height: 400px;
+  }
+  #wrapperDivBody {
+    overflow-x: hidden;
+  }
+  #header{
+    min-height: calc(100vw + 550px);
+  }
+  h3{line-height: 100%;}
+  * {
+    text-align: center !important;  
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h1 span {
+    font-size: 1.3em !important;
+  }
+  #valuePasto {
+    margin-left: 10px !important;
+  }
+  #valuePasto h1 {
+    margin-top: 20%;
+  }
+  #pastoSensorial {
+    max-height: 10000px !important;
+  }
+  .evento p {
+    line-height: 20px !important;
+  }
+  .twI {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  #twitterBanner {
+    background-size: cover;
+    height: 430px;
+  }
+  #bePart {
+    height: auto;
+  }
+  #app {
+    width: 100%;
+    height: 970px;
+  }
+  #cuadroApp .container .row:nth-child(1) {
+    height: auto;
+  }
+  #cuadroApp .container .row:nth-child(2) {
+    height: auto;
+  }
+  .type-control-icon img {
+    height: 40px;
+    width: auto;
+  }
+  .type-control {
+    height: 85px;
+  }
+  .type-control a {
+    padding: 10px 0px !important;
+  }
+  #cuadroApp {
+    height: auto;
+  }
+  #mainCanvas {
+    margin-left: -50%;
+  }
+  #ack {
+    font-size: 0.6em;
+  }
+}
+
+
+#bnwCarnival #introColombia, #bnwCarnival #imgMapa{
+  overflow:hidden;
+  max-height: 1000px;
+}
+
+#mainCanvas {
+  margin-left: 20%;
+}
+#nombres {
+  column-count: 2;
+}
+
+.slider-pages {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+.slider-page {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  -webkit-transition: -webkit-transform 1350ms;
+  transition: -webkit-transform 1350ms;
+  transition: transform 1350ms;
+  transition: transform 1350ms, -webkit-transform 1350ms;
+}
+
+.slider-page--skew {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  background: #282828;
+  -webkit-transform: skewX(-18deg);
+          transform: skewX(-18deg);
+}
+
+.slider-page--photos {
+    width: 70%;
+}
+
+.slider-page--text {
+    width: 40%;
+}
+
+.slider-page--left {
+  left: 0;
+  -webkit-transform: translateX(-32.5vh) translateY(100%) translateZ(0);
+          transform: translateX(-32.5vh) translateY(100%) translateZ(0);
+}
+.slider-page--left .slider-page--skew {
+  left: -40%;
+}
+.slider-page--left .slider-page__content {
+   -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+
+.slider-page--right {
+  right: 8%;
+  -webkit-transform: translateX(32.5vh) translateY(-100%) translateZ(0);
+          transform: translateX(32.5vh) translateY(-100%) translateZ(0);
+}
+.slider-page--right .slider-page--skew {
+  right: -40%;
+}
+.slider-page--right .slider-page__content {
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+
+.slider-page__content {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #e2e2e2;
+  background-size: cover;
+  -webkit-transform: skewX(18deg);
+          transform: skewX(18deg);
+  -webkit-transition: -webkit-transform 1350ms;
+  transition: -webkit-transform 1350ms;
+  transition: transform 1350ms;
+  transition: transform 1350ms, -webkit-transform 1350ms;
+}
+
+.slider-page__title {
+  margin-bottom: 1em;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.slider-page__title--big {
+  font-size: 1.2em;
+}
+
+.slider-page__description {
+  font-size: 1em;
+  text-align: center;
+}
+
+.slider-page__link {
+  color: #80a1c1;
+}
+.slider-page__link:hover, .slider-page__link:focus {
+  color: #6386a9;
+  text-decoration: none;
+}
+
+/***********************
+ *  Project JS Styles
+ **********************/
+.js-scrolling__page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.js-scrolling--active .slider-page {
+  -webkit-transform: translateX(0) translateY(0) translateZ(0);
+          transform: translateX(0) translateY(0) translateZ(0);
+}
+
+.js-scrolling--inactive .slider-page__content {
+  -webkit-transform: skewX(18deg) scale(0.9);
+          transform: skewX(18deg) scale(0.9);
+}
+
+.js-scrolling__page-2 .slider-page--left .slider-page__title,
+.js-scrolling__page-2 .slider-page--left .slider-page__description {
+  color: #282828;
+}
+
+.js-scrolling__page-1 .letra {
+  background: #282828 url("../images/gallery/backgroundGallery1.png") no-repeat top right;
+}
+
+.js-scrolling__page-2 .letra {
+  background: #282828 url("../images/gallery/backgroundGallery2.png") no-repeat bottom left;
+}
+
+.close {
+  position: fixed;
+  right: 0px;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.close img {
+  width: 25px;
+  padding: 15px;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.slider {
+    width: 100%;
+    margin: 0;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 75%;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.impar .slick-slide img {
+  width: 85%;
+  margin-left: -2%;
+
+
+}
+
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+} 
+  
+.letra h3 {
+  line-height: 100% !important;
+  text-align: right !important;
+}

@@ -1,0 +1,201 @@
+﻿<?xml version="1.0"?>
+<portal>
+  <!-- COMBOS -->
+  <!--angulo cam-->
+  <comboBox name="anguloCam" label="Ángulo de la cámara:  ">
+  	<option value="seleccione">Seleccione  </option>
+    <option value="frontal">Frontal</option>
+    <option value="perfilfi">Perfil Frontal Izq</option>
+    <option value="laterali">Lateral Izq</option>
+    <option value="perfilti">Perfil Trasero Izq</option>
+    <option value="trasero">Trasero</option>
+    <option value="perfiltd">Perfil Trasero Der</option>
+    <option value="laterald">Lateral Der</option>
+    <option value="perfilfd">Perfil Frontal Der</option>
+  </comboBox>
+  <!--ang plano-->
+  <comboBox name="anguloPlan" label="Ángulo del plano:  ">
+    <option value="seleccione">Seleccione  </option>
+    <option value="contrapicado">Contrapicado</option>
+    <option value="picado">Picado</option>
+    <option value="normla">Normal</option>   
+  </comboBox>
+  <!--T Somatico-->
+  <comboBox label="Tipo Somático: " name="tipo_somatico">
+			<option value="seleccione">Seleccione</option>
+			<option value="endomorfo">Endomorfo</option>
+			<option value="ectomorfo">Ectomorfo</option>
+			<option value="mesomorfo">Mesomorfo</option>		   
+	</comboBox>
+		
+		
+	<comboBox name="Experiencia" label="Nivel de Experiencia:  ">
+    <option value="seleccione">Seleccione</option>
+    <option value="ninguna">Ninguna</option>
+    <option value="experto">Experto</option>   
+    </comboBox>
+		
+  <comboBox name="genero" label="Género:  ">
+    <option value="seleccione">Seleccione</option>
+    <option value="femenino">Femenino</option>
+    <option value="masculino">Masculino</option>   
+  </comboBox>
+  
+
+  <comboBox name="Poblacion" label="Población:  ">
+    <option value="seleccione">Seleccione</option>
+    <option value="niño">Niño</option>
+    <option value="adulto">Adulto</option>
+    <option value="anciano">Anciano</option>
+  </comboBox>
+
+  <comboBox name="Movimiento" label="Movimiento:  ">
+    <option value="seleccione">Seleccione</option>
+    <option value="movimientosHumano">Movimientos normales del ser humano</option>
+    <option value="enfocadoAnimacion">Enfocado netamente a animación</option>
+    <option value="movimientosEspDisciplina">Movimientos especializados de una disciplina</option>
+  </comboBox>
+  
+  <comboBox name="Grupo" label="Grupo:  ">
+    <option value="seleccione">Seleccione</option>
+    <option value="movimientosCotidianos">Movimientos cotidianos</option>
+    <option value="movimientosCHumano">movimientos basicos generales de cuerpo humano</option>
+    <option value="movimientosBasicos">Movimientos por estiramientos basicos</option>
+    <option value="movimientosEjercicios">Movimientos basicos de calentamiento previo a ejercicios</option>
+    <option value="movimientosPrincipiosAnimacion">Movimientos por principios de animación</option>
+    <option value="movimientosEmociones">Movimientos por emociones</option>
+    <option value="movimientosAccion">Movimientos por secuencias de acción</option>
+    <option value="movimientosReaccion">Movimientos por secuencias de reacción</option>
+    <option value="movimientosTecnicaDeportiva">Movimientos por técnica deportiva</option>
+    <option value="movimientosYoga">Movimientos por poses de yoga</option>
+    <option value="movimientosArtesMarciales">Movimientos por poses de artes marciales</option>
+    <option value="movimientosDisciplinas">Movimientos por otras disciplinas</option>
+  </comboBox>
+  
+  <comboBox name="Formato" label="Formato: ">
+    <option value="seleccione">Seleccione</option>
+    <option value="mp4">mp4</option>
+    <option value="raw">raw</option>
+    <option value="mov">mov</option>
+    <option value="avi">avi</option>
+  </comboBox>
+  
+  <comboBox name="Idioma" label="Idioma: ">
+    <option value="seleccione">Seleccione</option>
+    <option value="Español">Español</option>
+    <option value="Ingles">Ingles</option>
+  </comboBox>
+  
+   <comboBox name="CalidadSalida" label="Calidad de salida: ">
+    <option value="seleccione">Seleccione</option>
+    <option value="1080p">1080p</option>
+    <option value="1024p">1024p</option>
+    <option value="720p">720p</option>
+  </comboBox>
+  
+    <!--
+  <comboBox name="Dia" label="Fecha creacion:  ">
+    <option value="seleccione">Seleccione</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">30</option>
+  </comboBox>
+  
+  <comboBox name="mes" label="">
+    <option value="seleccione">Seleccione</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+  </comboBox>
+  -->
+  
+  
+  <input>
+  	<general>
+    <!--General-->
+    <item value="titulo"  >Título: </item>
+    <item value="id" >ID_metadato: </item>
+    </general>
+  </input>
+  
+  <input>
+	<datosvideo>
+      <item value="Descripcion">Descripción: </item>
+      <item value="Duracion">Duración: </item>
+      <item value="Tamano">Tamaño: </item>
+      <!--<item value="Codec">Codec: </item>-->
+      <item value="DispositivoCaptura">Dispositivo de captura: </item>
+      <item value="Iluminacion">Iluminación: </item>
+      <item value="Cobertura">Cobertura: </item>
+      <!--<item value="FPS">FPS: </item>-->
+     </datosvideo>
+  </input>
+  
+  
+    <input>
+	<datosactor>
+      <item value="Actor">Actor: </item>    
+     </datosactor>
+  </input>
+  
+  <input>
+	<datosaccion>
+      <item value="Accion">Acción: </item>     
+      <item value="SecuenciaAccion">Secuencia acción: </item>
+     </datosaccion>
+  </input>
+  
+  
+   <input>
+	<datosPI>
+      <item value="Autor">Autor: </item>
+      <item value="Publicado por">Publicado por: </item>
+      <item value="Derechos">Derechos: </item>
+      <item value="Colaboradores">Colaboradores: </item>
+      <item value="PalabrasClave">Palabras clave: </item>
+      <item value="Licencia">Licencia: </item>
+     </datosPI>
+  </input>
+        
+
+  
+  
+  
+</portal>

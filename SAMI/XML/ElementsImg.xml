@@ -1,0 +1,237 @@
+
+
+<portal>
+<!-- COMBOS -->	
+	<!-- Partes del cuerpo 0-->	
+		<comboBox label="Seleccione la parte del cuerpo: " name="partes_cuerpo">
+			<option value="seleccione">Seleccione</option>
+			<option value="antebrazo">Antebrazo</option>
+			<option value="biceps">	Biceps	</option>
+		    <option value="boca">	Boca	</option>
+		    <option value="ceja">	Ceja	</option>
+		    <option value="cuello">	Cuello	</option>
+		    <option value="mano">	Mano	</option>
+		    <option value="muslo">	Muslo	</option>
+		    <option value="nariz">	Nariz	</option>
+		    <option value="ojos">	Ojos	</option>
+		    <option value="orejas">	Orejas	</option>
+		    <option value="pantorrilla">	Pantorrilla	</option>
+		    <option value="pelo">	Pelo	</option>
+		    <option value="pie">	Pie			</option>
+		    <option value="torso">	Torso	</option>
+		</comboBox>
+		
+	<!-- Tipo Somatico 1-->	
+		<comboBox label="Tipo Somático: " name="tipo_somatico">
+			<option value="seleccione">Seleccione</option>
+			<option value="endomorfo">Endomorfo</option>
+			<option value="ectomorfo">Ectomorfo</option>
+			<option value="mesomorfo">Mesomorfo</option>		   
+		</comboBox>
+
+	<!-- Estilo 2-->	
+		<comboBox label="Estilo: " name="estilo">
+			<option value="seleccione">Seleccione</option>
+			<option value="cartoon">Cartoon</option>
+			<option value="realista">Realista</option>
+			<option value="manga">	Manga</option>		   
+		</comboBox>
+
+	<!-- Tamaño 3-->	
+		<comboBox label="Tamaño: " name="tamano">
+			<option value="seleccione">Seleccione</option>
+			<option value="pequeño">Pequeño</option>
+			<option value="mediano">Mediano</option>
+			<option value="grande">Grande</option>		   
+		</comboBox>
+		
+	<!-- Color piel 4-->	
+		<comboBox label="Color Piel: " name="color_piel">
+			<option value="seleccione">Seleccione</option>
+			<option value="cartoon">Cartoon</option>
+			<option value="realista">Realista</option>
+			<option value="manga">	Manga</option>		   
+		</comboBox>
+
+	<!-- Color  5-->	
+		<comboBox label="Color: " name="color">
+			<option value="seleccione">Seleccione</option>
+			<option value="cartoon">Cartoon</option>
+			<option value="realista">Realista</option>
+			<option value="manga">	Manga</option>		   
+		</comboBox>
+		
+	<!-- Padres 6-->	
+		<comboBox label="Padres: " name="padre">
+			<option value="antebrazo">Antebrazo</option>
+			<option value="biceps">	Biceps	</option>
+		    <option value="boca">	Boca	</option>
+		    <option value="ceja">	Ceja	</option>
+		    <option value="cuello">	Cuello	</option>
+		    <option value="mano">	Mano	</option>
+		    <option value="muslo">	Muslo	</option>
+		    <option value="nariz">	Nariz	</option>
+		    <option value="ojos">	Ojos	</option>
+		    <option value="orejas">	Orejas	</option>
+		    <option value="pantorrilla">	Pantorrilla	</option>
+		    <option value="pelo">	Pelo	</option>
+		    <option value="pie">	Pie			</option>
+		    <option value="torso">	Torso	</option>
+		</comboBox>
+	
+	<!-- Hijos 7-->	
+		<comboBox label="Hijos: " name="hijo">
+			<option value="antebrazo">Antebrazo</option>
+			<option value="biceps">	Biceps	</option>
+		    <option value="boca">	Boca	</option>
+		    <option value="ceja">	Ceja	</option>
+		    <option value="cuello">	Cuello	</option>
+		    <option value="mano">	Mano	</option>
+		    <option value="muslo">	Muslo	</option>
+		    <option value="nariz">	Nariz	</option>
+		    <option value="ojos">	Ojos	</option>
+		    <option value="orejas">	Orejas	</option>
+		    <option value="pantorrilla">	Pantorrilla	</option>
+		    <option value="pelo">	Pelo	</option>
+		    <option value="pie">	Pie			</option>
+		</comboBox>
+	<!-- Tema 8-->	
+		<comboBox label="Tema: " name="tema">
+			<option value="seleccione">Seleccione</option>
+			<option value="femenino">Femenino</option>
+			<option value="masculino">Masculino</option>
+		</comboBox>
+
+	<!-- Forma Nazon 9-->	
+		<comboBox label="Forma Nazon: " name="nazon">
+			<option value="seleccione">Seleccione</option>
+			<option value="femenino">Femenino</option>
+			<option value="masculino">Masculino</option>
+		</comboBox>
+		
+	<!-- Forma Punta 10-->	
+		<comboBox label="Forma Punta: " name="punta">
+			<option value="seleccione">Seleccione</option>
+			<option value="femenino">Femenino</option>
+			<option value="masculino">Masculino</option>
+		</comboBox>	
+
+<!-- INPUT -->		
+		<input>
+			<!-- General -->
+				<item name= "nombre" >Nombre: </item> <!-- Cambiar a combo -->
+				<item name= "ing_char">ING_Char: </item>
+		</input>
+		
+		<input>	
+			<!-- Atributos -->
+			<atributosAntebrazo>		
+					<item value="forma">Forma: </item>
+					<item value="max_ancho">Max_ancho: </item>
+					<item value="max_alto">Max_alto: </item>
+			</atributosAntebrazo>
+			<atributosBiceps>		
+					<item value="forma">Forma: </item>
+					<item value="max_ancho">Max_ancho: </item>
+					<item value="max_alto">Max_alto: </item>
+			</atributosBiceps>
+			
+			<atributosBoca>		
+					<item value="forma">Forma: </item>
+					<item value="forma">Forma grosor: </item>
+					<item value="forma">Forma labio superior: </item>
+					<item value="forma">Forma labio inferior: </item>
+					<item value="max_ancho">Max_ancho: </item>
+					<item value="max_alto">Max_alto: </item>
+			</atributosBoca>
+			<atributosCeja>		
+					<item value="forma">Forma: </item>
+					<item value="densidad">Densidad: </item>
+					<item value="forma">Distancia Ojo: </item>
+					<item value="max_ancho">Max_ancho: </item>
+					<item value="max_alto">Max_alto: </item>
+			</atributosCeja>
+			<atributosCuello>		
+					<item value="forma">Forma: </item>
+					<item value="max_ancho">Max_ancho: </item>
+					<item value="max_alto">Max_alto: </item>
+			</atributosCuello>
+			<atributosMano>		
+					<item value="forma">Forma: </item>
+					<item value="max_ancho">Max_ancho: </item>
+					<item value="max_alto">Max_alto: </item>
+			</atributosMano>
+			<atributosMuslo>		
+					<item value="forma">Forma: </item>
+					<item value="max_ancho">Max_ancho: </item>
+					<item value="max_alto">Max_alto: </item>
+			</atributosMuslo>
+			<atributosNariz>		
+					<item value="forma">Forma: </item>
+					<item value="max_ancho">Max_ancho: </item>
+					<item value="max_alto">Max_alto: </item>
+			</atributosNariz>
+			<atributosOjos>		
+					<item value="forma">Forma: </item>
+					<item value="max_ancho">Max_ancho: </item>
+					<item value="max_alto">Max_alto: </item>
+			</atributosOjos>
+			<atributosOrejas>		
+					<item value="forma">Forma: </item>
+					<item value="max_ancho">Max_ancho: </item>
+					<item value="max_alto">Max_alto: </item>
+			</atributosOrejas>
+			<atributosPantorrillas>		
+					<item value="forma">Forma: </item>
+					<item value="max_ancho">Max_ancho: </item>
+					<item value="max_alto">Max_alto: </item>
+			</atributosPantorrillas>
+			<atributosPelo>		
+					<item value="forma">Forma: </item>
+					<item value="max_ancho">Max_ancho: </item>
+					<item value="max_alto">Max_alto: </item>
+			</atributosPelo>
+			<atributosPie>		
+					<item value="forma">Forma: </item>
+					<item value="max_ancho">Max_ancho: </item>
+					<item value="max_alto">Max_alto: </item>
+			</atributosPie>			
+			<atributosTorso>		
+					<item value="forma_plexosolar">Forma Plexosolar (Cuadrado): </item>
+					<item value="forma_plexosolar2">Forma Plexosolar (Caída): </item>
+					<item value="forma_abdomen">Forma Abdomen: </item>					
+					<item value="max_ancho">Max_ancho: </item>
+					<item value="max_alto">Max_alto: </item>
+			</atributosTorso>	
+			
+		</input>	
+		
+		
+		<input>
+				
+			<!-- Coordenadas -->
+				<tamLienzo label="Tamaño Lienzo: ">
+					<item value="ancho"> Ancho: </item>
+					<item value="alto"> Alto: </item>
+				</tamLienzo>
+				
+				<areaActiva  label="Área activa: ">
+					<item value="x_inicial"> X_inicial: </item>
+					<item value="y_inicial"> Y_inicial: </item>
+					<item value="ancho"> Ancho: </item>
+					<item value="alto"> Alto: </item>
+				</areaActiva >
+					
+				
+				<ptoAnclaje label="Punto de Anclaje: "> 
+					<item value="x"> X: </item>
+					<item value="y"> Y: </item>
+					<item value="porcentaje en X"> Porcentaje en X: </item>
+					<item value="porcentaje en Y"> Porcentaje en Y: </item>
+				</ptoAnclaje>
+				
+			
+		</input>
+			
+
+</portal>

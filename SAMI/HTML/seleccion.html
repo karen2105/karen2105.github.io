@@ -1,0 +1,92 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SAMI</title>
+
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-latest.js"></script>
+
+
+</head>
+
+<body id="bodyControl">
+
+<header id="headerControl">
+	<nav>
+		<a href="#">Salir</a> 
+	</nav>
+	
+</header>
+<section id="sectionControl">
+	<div id="titleFormularioControl"> 
+		<p style="font-size: 30px; font-weight:400 !important; ">BASE DE DATOS - SAMI</p>
+		<p style="font-size: 15px ">Imágenes</p>			
+	</div>
+	<div id="cuerpoFormularioControl" >
+	<form id="comboInit" method="post">
+		
+		
+	</form>		
+	<form id="formularios" autocomplete="off" method="get">
+		<div id="general" class="Formulario" >
+			<p>Datos Generales</p>
+		</div>		
+		<div id="atributos" class="Formulario" >
+			<p>Atributos</p>			
+			
+		</div>
+		
+		<div id="relacion" class="Formulario">
+			<p>Relaciones</p>
+		</div>
+		
+		<div id="coordenadas" class="Formulario" >
+			<p>Coordenadas</p>
+			<div id="coordenadasIzquierda"></div>
+			<div id="coordenadasDerecha"></div>
+		</div>
+	</form>
+	
+	<form id="formArchivos" method="post" enctype="multipart/form-data">
+	    
+	    <div id="archivos" class="Formulario" >
+			<p>Archivos</p>			
+			Seleccione el archivo la imagen (.PNG):
+	    	<input type="file" name="fileToUploadPNG" id="fileToUploadPNG" accept=".png">
+	    	Seleccione el archivo que contiene los vectores (.AI):
+	    	<input type="file" name="fileToUploadAI" id="fileToUploadAI" accept=".ai">
+	    	Seleccione el metadato (.TXT):
+	    	<input type="file" name="fileToUploadTXT" id="fileToUploadTXT" accept=".txt">
+	    </div>
+	    
+	</form>
+	
+	<div id="submitButton">
+			<button type="submit"  onclick="submitForm()">Guardar</button>
+			
+	</div>
+	
+	</div>
+</section>
+
+<footer id="FooterControl">
+				<div id="logosFooterControl">
+					<img id="logoSAMI" src="../Images/Logo-SAMI.png" width="auto" height=70 class="tint"/>
+					<img id="logoUMNG" src="../Images/LOGO_UMNG.png" width="auto" height=70 class="tint"/>
+					<p>
+						&copy; Copyright by SAMI - Universidad Militar Nueva Granada<br />
+						Grupo de Investigación en Multimedia - Semillero de Aplicaciones Multimedia Interactiva<br />
+						sami.umng@gmail.com
+					</p>
+				</div>
+			</footer>
+
+<script type="text/javascript" src="../JS/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+textarea{
+	margin: 0px;
+    width: 205px;
+    height: 113px;
+	
+}
+
+#general input{
+	width:90%;
+	display: block;
+}
+
+#datosvideo label, #datosactor label, #datosaccion label , #datosPI label, #caractvideo label{
+	display: block;
+	margin: 15px 0px;
+}
+#datosvideo input, #datosactor input, #datosaccion input , #datosPI input, #caractvideo input{
+
+	width:90%;
+	display: block;
+}
+
+
+#archivos{
+	clear: both;
+}
+
+#formArchivos{
+	padding: 20px 20px 20px 35px;
+}
+#archivos input{
+	display: block;
+	margin: 5px 0px 25px 10px;
+}
+
+#btn{
+	padding: 15px;
+	
+	background-color: #0D65A4;	
+	color: #FFF;
+	width: 70px;
+	text-align: center;
+
+	margin: 60px 0px 10px 80%;
+}

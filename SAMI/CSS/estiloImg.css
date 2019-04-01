@@ -1,0 +1,90 @@
+#general input{
+	width:90%;
+	display: block;
+}
+
+#atributos label{
+	display: block;
+	margin: 15px 0px;
+}
+
+
+#atributos input{
+	width:90%;
+	display: block;
+}
+
+#relacion label{
+	margin: 0 16%;
+}
+
+
+#coordenadasIzquierda label{
+	display: block;
+	margin: 15px 0px;
+	margin-left: 10px;
+}
+
+
+#coordenadasIzquierda input{
+	width:60%;
+	display: block;
+}
+
+
+#coordenadasDerecha label{
+	display: block;
+	margin: 15px 0px;
+	margin-left: 10px;
+}
+
+
+#coordenadasDerecha input{
+	width:60%;
+	display: block;
+}
+
+#coordenadasDerecha{
+	width: 50%;
+	float: left;
+}
+
+
+#coordenadasIzquierda{
+	width: 50%;
+	float: left;
+}
+
+#archivos{
+	clear: both;
+}
+
+#formArchivos{
+	padding: 20px 20px 20px 35px;
+}
+#archivos input{
+	display: block;
+	margin: 5px 0px 25px 10px;
+}
+
+.coordenadasLabel{
+	font-weight: 400 !important;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.relacion{
+	height: 125px;
+	width: 100px;	
+}
+
+#btn{
+	padding: 15px;
+	
+	background-color: #0D65A4;	
+	color: #FFF;
+	width: 70px;
+	text-align: center;
+
+	margin: 60px 0px 10px 80%;
+}

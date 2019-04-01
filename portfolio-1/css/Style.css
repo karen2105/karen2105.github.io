@@ -1,0 +1,821 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 800px and below. */
+
+.gridContainer {
+	width: 772px;
+	background-color:#FFF;
+}
+/*Clases*/
+.Nubes{ z-index:5;}
+.Texts{	z-index:2;}
+.Front{	z-index:3;}
+.Down { z-index:1;}
+.Side { z-index:12;}
+.SideD{ z-index:12;}
+
+
+*{
+	text-decoration:none;
+	overflow:hidden;
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	background: #FFF;
+}
+	
+/*Menu*/
+nav#menuBtn {
+	z-index: 15;
+	position: fixed;
+	top: 50%;
+	right: 16px;
+	margin-top: -60px;
+}
+nav#menuBtn li {
+	position: relative;
+	height:32px;
+	margin-top:4px;
+}
+nav#menuBtn a {
+	display: block;
+	width: 36px;		
+}
+
+nav#menuBtn a img{
+	-webkit-transform:scale(0.85,0.85); 	
+}
+	
+nav#menuBtn a:hover img, nav#menuBtn a.active img{ 		
+	-webkit-transform:scale(1,1);	
+}
+
+nav#menuBtn h1 {
+	z-index: 15;	
+	position: absolute;
+	right: 40px;
+	top: -8px;
+	display: none;
+	padding: 4px 20px 4px 7px;
+	color: #fff;
+	background: transparent url(../images/nav-arrow.png) 100% 50% no-repeat;
+	}
+
+
+/* content */
+#home, #about, #portfolio, #contact{
+	width:772px;
+	height:800px;
+	min-height:620px;
+	overflow:hidden;
+}
+#karen{
+	width: 160px;
+	height: auto;
+	position: fixed;
+	top: 58%;
+	right: 267px;
+	z-index: 10;
+}
+
+#karen.active{ 		
+	opacity:0.4;	
+}
+
+#likeFB{
+	position: fixed;
+	bottom: 11px;
+	overflow: hidden;
+	margin-left: 9px;
+	z-index: 200;
+}
+
+
+/*Home*/
+#home{
+	background: url(../images/FondoHome.jpg) 50% 0 no-repeat fixed;
+}
+
+#logo{	
+	margin: 41px 0 0 75px;
+	position: absolute;
+}
+
+#textHome{
+	position: relative;
+	left: 8%;
+	margin-top: 31%;
+}
+#homeAll{
+	height: 100%;	
+	max-width: 1900px;
+	width:100%;
+	position: absolute;
+	overflow-x: scroll;
+}
+#flecha{
+	position: fixed;
+	right: 61px;
+	margin-top: 41%;
+}
+#Homenube{
+	height: 100%;
+	width:100%;
+	max-width: 1900px;
+	position: absolute;
+	top: 0;
+	overflow: visible;
+}
+#nubeFixed{
+	position: relative;
+	margin-left: 50%;
+	left: -1200px;
+	margin-top: -900px;
+	z-index: 1;
+}
+
+#nube{
+	position: relative;
+	margin-top: 600px;
+	margin-left: 50%;
+	left: -1190px;
+	opacity: 0.5;
+}
+
+
+/*About*/
+#about{
+	background:#FFF;
+}
+#aboutAll{
+
+	height: 100%;	
+	max-width: 1900px;
+	width:100%;
+	position: absolute;
+	overflow: hidden;
+}	
+#textAbout{
+	position: relative;
+	left: 1%;
+	margin-top: 688px;
+	float: left;
+	z-index: 12;
+}
+#textHi{		
+	float: right;
+	margin-top: -638px;
+	margin-right: 61%;
+	position: relative;	
+	width:197px;
+	height:auto;
+	opacity:0.3;
+}
+#footAbout{
+	clear: both;
+	position: absolute;
+	margin-left: 50%;
+	left: -564px;
+	bottom: 16px;
+	width: 1330px;
+	height: auto;
+}
+
+
+/*Portfolio*/
+#portfolio{
+	background:#000;
+	position: relative;
+}
+
+#portfolioAll{
+	height: 100%;	
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+}
+
+
+/*Contact*/
+#contact{
+	clear:both;
+	background: url(../images/FondoContactB.jpg) repeat;
+	background-size:auto 100%;
+	max-height:900px;		
+	z-index: 11;
+	position:relative;
+}
+
+#contactAll{
+	height: 100%;
+	max-width: 1900px;
+	width: 100%;
+	position: absolute;
+	overflow: hidden;
+}
+#social{
+	position: relative;
+	margin-left: -61%;
+	top: 10%;
+	height: 312px;
+	overflow: visible;
+}
+#fb{
+	top: 0px;
+	left:0px;
+	position: absolute;
+	float: left;
+}
+#in{
+	top: 0px;
+	left:193px;
+	position: absolute;
+	float: left;
+}
+#tw{
+	top: 0px;
+	left:386px;
+	position: absolute;
+	float: left;
+}
+
+#telephone{
+	position: absolute;
+	top: 65%;
+	left: 616px;
+	
+}
+#telephone:hover{
+	-webkit-animation: vibrate 10ms linear infinite alternate;
+	-o-animation: vibrate 10ms linear infinite alternate;
+	-moz-animation: vibrate 10ms linear infinite alternate;
+	animation: vibrate 10ms linear infinite alternate;
+	}
+
+#tileContact{
+	left: 3%;
+	position: absolute;
+	bottom: 13%;
+	z-index:2;
+	width: 500px;
+	height: auto;
+}
+#karen2{	
+	position: absolute;
+	margin-left: 128%;
+	bottom: 10%;
+	
+}
+
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 800px) {
+	
+.gridContainer {
+	width: 100%;	
+	background-color:#FFF;
+}
+/*Clases*/
+.Nubes{ z-index:5;}
+.Texts{	z-index:2;}
+.Front{	z-index:3;}
+.Down { z-index:1;}
+.Side { z-index:12;}
+.SideD{ z-index:12;}
+
+
+*{
+	text-decoration:none;
+	overflow:hidden;
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	background: #FFF;
+}
+	
+/*Menu*/
+nav#menuBtn {
+	z-index: 15;
+	position: fixed;
+	top: 50%;
+	right: 16px;
+	margin-top: -60px;
+}
+nav#menuBtn li {
+	position: relative;
+	height:32px;
+	margin-top:4px;
+}
+nav#menuBtn a {
+	display: block;
+	width: 36px;		
+}
+
+nav#menuBtn a img{
+	-webkit-transform:scale(0.85,0.85); 	
+}
+	
+nav#menuBtn a:hover img, nav#menuBtn a.active img{ 		
+	-webkit-transform:scale(1,1);	
+}
+
+nav#menuBtn h1 {
+	z-index: 15;	
+	position: absolute;
+	right: 40px;
+	top: -8px;
+	display: none;
+	padding: 4px 20px 4px 7px;
+	color: #fff;
+	background: transparent url(../images/nav-arrow.png) 100% 50% no-repeat;
+	}
+
+
+/* content */
+#home, #about, #portfolio, #contact{
+	width:100%;
+	height:100vh;
+	min-height:620px;
+	overflow:hidden;
+}
+#karen{
+	width:221px;
+	height:366px;	
+	position:fixed;
+	top:50%;	
+	margin-top: -80px;
+	right:9%;
+	z-index:10;
+}
+
+#karen.active{ 		
+	opacity:0.2;	
+}
+
+#likeFB{
+	position: fixed;
+	bottom: 15px;
+	overflow: hidden;
+	margin-left: 25px;
+	z-index:200;
+}
+
+
+/*Home*/
+#home{
+	background: url(../images/FondoHome.jpg) 50% 0 no-repeat fixed;
+}
+
+#logo{	
+	margin: 41px 0 0 75px;
+	position: absolute;
+}
+
+#textHome{
+	position: relative;
+	left: 12%;
+	margin-top: 22%;
+}
+#homeAll{
+	height: 100vh;	
+	max-width: 1900px;
+	width:100%;
+	position: absolute;
+	overflow: hidden;
+}
+#flecha{
+	position: fixed;
+	right: 65px;
+	margin-top: 23%;
+}
+#Homenube{
+	height: 100vh;
+	width:100%;
+	max-width: 1900px;
+	position: absolute;
+	top: 0;
+	overflow: visible;
+}
+#nubeFixed{
+	position: relative;
+	margin-left: 50%;
+	left: -1200px;
+	margin-top: -103vh;
+	z-index: 1;
+}
+
+#nube{
+	position: relative;
+	margin-top: 85vh;
+	margin-left: 50%;
+	left: -1190px;
+	opacity: 0.5;
+}
+
+
+/*About*/
+#about{
+	background:#FFF;
+}
+#aboutAll{
+
+	height: 100vh;	
+	max-width: 1900px;
+	width:100%;
+	position: absolute;
+	overflow: hidden;
+}	
+#textAbout{
+	
+	position: relative;
+	left: 3%;
+	margin-top: 92vh;
+	float: left;
+	z-index: 12;
+}
+#textHi{		
+	float: right;
+	margin-top: 25vh;
+	margin-right: 27%;
+	position: relative;
+	width:256px;
+	height:208px;
+	opacity:1;
+}
+#footAbout{
+	clear:both;
+	position:absolute;
+	margin-left:50%;
+	left:-940px;
+	bottom:0px;	
+	width:1938px;
+	height:auto;
+}
+
+
+/*Portfolio*/
+#portfolio{
+	background:#000;	
+}
+
+#portfolioAll{
+	height: 100vh;	
+	width: 112px;
+	margin: 5% 0;
+}
+
+#iframe {
+	position: relative;
+	text-align: center;
+	margin: 7% 0;
+	margin-right: 15%;
+	z-index: 11;
+}
+
+
+/*Contact*/
+#contact{
+	clear:both;
+	background: url(../images/FondoContactB.jpg) repeat;
+	background-size:auto 100%;
+	max-height:900px;		
+	z-index: 11;
+	position:relative;
+}
+
+#contactAll{
+	height: 100%;
+	max-width: 1900px;
+	width: 100%;
+	position: absolute;
+	overflow: hidden;
+}
+#social{
+	position: relative;
+	margin-left: -40%;
+	top: 10%;
+	height: 312px;
+	overflow: visible;
+}
+#fb{
+	top: 0px;
+	left:0px;
+	position: absolute;
+	float: left;
+}
+#in{
+	top: 0px;
+	left:200px;
+	position: absolute;
+	float: left;
+}
+#tw{
+	top: 0px;
+	left:400px;
+	position: absolute;
+	float: left;
+}
+
+#telephone{
+	position: absolute;
+	top: 65%;
+	left: 46%;
+	
+}
+#telephone:hover{
+	-webkit-animation: vibrate 10ms linear infinite alternate;
+	-o-animation: vibrate 10ms linear infinite alternate;
+	-moz-animation: vibrate 10ms linear infinite alternate;
+	animation: vibrate 10ms linear infinite alternate;
+	}
+
+#tileContact{
+	left: 3%;
+	position: absolute;
+	bottom: 13%;
+	z-index:2;
+	width: 701px;
+	height: auto;
+}
+#karen2{	
+	position: absolute;
+	margin-left: 116%;
+	bottom: 9%;
+	
+}
+
+
+}
+
+
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1200px) {
+.gridContainer {
+	width: 100%;
+	max-width: 1900px;	
+	margin: auto;
+	background-color:#FFF;
+}
+
+
+/* content */
+
+
+#home, #about, #portfolio, #contact{
+	width:100%;
+	height:100vh;
+	min-height:620px;
+	overflow:hidden;
+}
+#karen{
+	width:221px;
+	height:366px;	
+	position:fixed;
+	top:50%;	
+	margin-top: -80px;
+	right:15%;
+	z-index:10;
+}
+
+#likeFB{
+	position:fixed;
+	bottom:15px;
+	z-index:200;
+}
+
+
+/*Home*/
+#home{
+	background: url(../images/FondoHome.jpg) 50% 0 no-repeat fixed;
+}
+
+#logo{	
+	margin: 45px 0 0 165px;
+	position: absolute;
+}
+
+#textHome{
+	position:relative;
+	left:21%;
+	margin-top:18%;
+}
+#homeAll{
+	height: 100vh;	
+	max-width: 1900px;
+	width:100%;
+	position: absolute;
+	overflow: hidden;
+}
+#flecha{
+	position: fixed;
+	right: 65px;
+	margin-top: 19%;
+}
+#Homenube{
+	height: 100vh;
+	width:100%;
+	max-width: 1900px;
+	position: absolute;
+	top: 0;
+	overflow: visible;
+}
+#nubeFixed{
+	position: relative;
+	margin-left: 50%;
+	left: -1200px;
+	margin-top: -115vh;
+	z-index: 1;
+}
+
+#nube{
+	position: relative;
+	margin-top: 85vh;
+	margin-left: 50%;
+	left: -1190px;
+	opacity: 0.5;
+}
+
+
+/*About*/
+#about{
+	background:#FFF;
+}
+#aboutAll{
+	height: 100vh;	
+	max-width: 1900px;
+	width:100%;
+	position: absolute;
+	overflow: hidden;
+}	
+#textAbout{
+	position: relative;
+	left: 7%;
+	margin-top: 90vh;
+}
+#textHi{
+	float: right;
+	margin-top: 25vh;
+	margin-right: 27%;
+	position: relative;
+	width:256px;
+	height:208px;
+	opacity:1;
+}
+#footAbout{
+	clear:both;
+	position:absolute;
+	margin-left:50%;
+	left:-969px;
+	bottom:0px;	
+	width:1938px;
+	height:auto;
+}
+
+
+/*Portfolio*/
+#portfolio{
+	background:#000;	
+	position: relative;
+}
+
+#portfolioAll{
+	height: 100vh;	
+	width: 112px;
+	position: absolute;
+}
+
+
+/*Contact*/
+#contact{
+	clear:both;
+	background: url(../images/FondoContactB.jpg) repeat;
+	background-size:auto 100%;
+	max-height:900px;		
+	z-index: 11;
+	position:relative;
+}
+
+#contactAll{
+	height: 100%;
+	max-width: 1900px;
+	width: 100%;
+	position: absolute;
+	overflow: hidden;
+}
+#social{
+	position: relative;
+	margin-left: -20%;
+	top: 14%;
+	height: 312px;
+	overflow: visible;
+}
+#fb{
+	top: 0px;
+	left:0px;
+	position: absolute;
+	float: left;
+}
+#in{
+	top: 0px;
+	left:210px;
+	position: absolute;
+	float: left;
+}
+#tw{
+	top: 0px;
+	left:420px;
+	position: absolute;
+	float: left;
+}
+
+#telephone{
+	position: absolute;
+	top: 65%;
+	left: 46%;
+	
+}
+#telephone:hover{
+	-webkit-animation: vibrate 10ms linear infinite alternate;
+	-o-animation: vibrate 10ms linear infinite alternate;
+	-moz-animation: vibrate 10ms linear infinite alternate;
+	animation: vibrate 10ms linear infinite alternate;
+	}
+
+#tileContact{
+	left: 7%;
+	position: absolute;
+	bottom: 13%;
+	width: 701px;
+	height: auto;
+}
+#karen2{	
+	position: absolute;
+	margin-left: 105%;
+	bottom: 9%;
+	
+}
+}
+
+@-webkit-keyframes vibrate{
+    from {
+        -webkit-transform: rotate(-2deg);
+    }
+    to{
+        -webkit-transform: rotate(2deg);
+    }
+}
+@-moz-keyframes vibrate{
+    from {
+        -moz-transform: rotate(-2deg);
+    }
+    to{
+        -moz-transform: rotate(2deg);
+    }
+}
+@-o-keyframes vibrate{
+    from {
+        -o-transform: rotate(-2deg);
+    }
+    to{
+        -o-transform: rotate(2deg);
+    }
+}
+@keyframes vibrate{
+    from {
+        transform: rotate(-2deg);
+    }
+    to{
+        transform: rotate(2deg);
+    }
+}
