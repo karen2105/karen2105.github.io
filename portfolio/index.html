@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css?family=Merienda+One"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet"/> 
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -22,52 +23,33 @@
     />
 
     <script src="scripts/constants.js"></script>
+    <script src="scripts/loading.js"></script>
+    <script src="scripts/home-page.js"></script>
     <link href="styles/main.css" rel="stylesheet" />
 
-    <script>
-      $(function() {
-        $("#main-nav-bar").load("components/navBar.html");
-        $("#footer").load("components/footer.html");
-
-        var iconsURL = [
-          "assets/SVG/JS.html",
-          "assets/SVG/React-icon.html",
-          "assets/SVG/sass.html",
-          "assets/SVG/npm.html",
-          "assets/SVG/sketch.html",
-          "assets/SVG/adobe-creative.html",
-          "assets/SVG/git.html"
-        ];
-
-        createIconsHomeContent(iconsURL);
-        /* animationHiText();
-
-      function animationHiText() {
-        setTimeout(function() {
-          $( ".hola-text" ).toggle();
-          animationHiText();
-         }, 4000);
-      } */
-
-        function createIconsHomeContent(iconsURL) {
-          $.each(iconsURL, function(index, value) {
-            $("#home-content-icons").append($("<span>").load(value));
-          });
-        }
-      });
-    </script>
   </head>
 
   <body id="home">
+    <!-- Loader -->
+    <div class="loader-home">
+      <div class="circles-container">  
+        <div class="circle circle-white"></div>
+        <div class="inner-containers">
+          <div class="circle circle-dark">
+            <div class="hi-bubble">
+              <span class="hola-text">Hi!</span>
+              <span class="hola-text" style="display: none;">Hola!</span>
+            </div>
+          </div>
+          <div class="circle circle-dark-dashed"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main content -->
     <div class="home-container">
       <header id="main-nav-bar"></header>
 
-      <!--     
-    <div class="hi-bubble">
-      <span class="hola-text">Hi!</span>
-      <span class="hola-text" style="display: none;">Hola!</span>
-    </div> 
-  -->
       <div class="home-content">
         <h1>I'm <strong>Karen Alonso</strong></h1>
         <h3>UX designer and front-end developer</h3>
@@ -104,6 +86,11 @@
 
       <div id="footer" class="footer"></div>
     </div>
+    
+    <!-- <video class="video-background" autoplay loop >
+      <source src="assets/Videos/Hey-World.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video> -->
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
