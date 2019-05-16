@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Karen Alonso - Projects</title>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Merienda+One"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+
+    <script src="../scripts/constants.js"></script>
+    <link href="../styles/main.css" rel="stylesheet" />
+
+    <script>
+      $(function() {
+        $("#main-nav-bar").load("navBar.html");
+        $("#footer").load("footer.html");
+
+        $("#logos").load("individual-projects/logos.html");
+        $("#advertising").load("individual-projects/advertising.html");
+        $("#web").load("individual-projects/web.html");
+      });
+    </script>
+  </head>
+
+  <body id="projects">
+    <div id="projects-main-container" class="projects-container">
+      <header id="main-nav-bar"></header>
+      <div class="projects-wrapper">
+        <h1>Projects</h1>
+        <div class="category web">
+          <h2>UX design and web development</h2>
+          <hr />
+          <div class="project-images-wrapper" id="web"></div>
+        </div>
+        <div class="category logos">
+          <h2>Logos and corporative identity</h2>
+          <hr />
+          <div class="project-images-wrapper" id="logos"></div>
+        </div>
+        <div class="category advertising">
+          <h2>Advertising design</h2>
+          <hr />
+          <div class="project-images-wrapper" id="advertising"></div>
+        </div>
+      </div>
+
+      <div id="footer" class="footer"></div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

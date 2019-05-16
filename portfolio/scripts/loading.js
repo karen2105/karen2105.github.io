@@ -9,12 +9,12 @@ $(function() {
       //$(".video-background").addClass("home-effects");
       $(".home-container").show();
     });
-  }, 2800);
+  }, 2000);
 
   function animationHiText() {
     setTimeout(function() {
       $( ".hola-text" ).toggle();
       animationHiText();
-     }, 1500);
+     }, 1100);
   }
 });
