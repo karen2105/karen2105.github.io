@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Karen Alonso - About</title>
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+
+  <script src="../scripts/constants.js"></script>
+  <link href="../styles/main.css" rel="stylesheet">
+
+  <script>
+    $(function () {
+      $("#main-nav-bar").load("navBar.html");
+      $("#footer").load("footer.html");
+
+      var controller = new ScrollMagic.Controller();
+      var  scene = new ScrollMagic.Scene({
+        triggerElement: ".about-container-right",
+        reverse: false,
+      })
+      .triggerHook("onEnter")
+      .setClassToggle(".about-container-right", "show")
+      .addTo(controller);
+
+      var scene2 = new ScrollMagic.Scene({
+        triggerElement: ".about-acknowledgements img",
+        reverse: false,
+      })
+      .triggerHook("onCenter")
+      .setClassToggle(".about-acknowledgements img", "show")
+      .addTo(controller);
+
+
+
+    });
+  </script>
+</head>
+
+<body id="about" class="preloader">
+  <header id="main-nav-bar"></header>
+  <div class="about-container-left">
+    <div class="content-wrapper">
+      <div class="photo-container">
+        <img src="../assets/images/about-photo.png" alt="Photo Karen Alonso" width=150 height="auto" />
+      </div>
+      <h1>I'm <strong>Karen Alonso</strong></h1>
+      <p>I am a Colombian Engineer living in England. I am very passionate about web, and also about researching about interactive technologies and design. I am always looking forward for new challenges and projects.</p>
+      <div class="buttons">
+        <a href="projects.html" class="primary-button btn">Visit my projects</a>
+        <a href="../downloadDocs/KarenAlonsoCV.pdf" target="_blank" class="secondary-button btn">Download CV</a>
+      </div>
+      <span class="contact-text">Contact me <address>+44 7835 395929 / <a class="hyperlink"
+            href="mailto:ingkaren.alonso@gmail.com">ingkaren.alonso@gmail.com</a></address></span>
+    </div>
+    <div id="footer" class="footer"></div>
+  </div>
+
+  <div class="about-container-right">
+    <div class="about-content">
+      <div class="about-linkedin section">
+        <div id="recommentations" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#recommentations" data-slide-to="0" class="active"></li>
+            <li data-target="#recommentations" data-slide-to="1"></li>
+            <li data-target="#recommentations" data-slide-to="2"></li>
+            <li data-target="#recommentations" data-slide-to="3"></li>
+            <li data-target="#recommentations" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p class="d-block w-100">
+                <a target="_blank" href="https://www.linkedin.com/in/ingkaren/">I worked closely with Karen to design and implement a wide variety of UIs. Karen has great all round ability and exceeded expectations in every challenge, she really helped take the product to the next level. She always worked efficiently and to a high standard, learning new things and looking for ways to improve both her approach and team workflow. Karen was an absolute pleasure to work with and was highly valued within the team, both for her work and being a great person.</a>
+                <hr align="right" />
+                <span class="recommendation-name">Zeke Bolton</span>
+                <span class="recommendation-role">Senior UX Designer</span>
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="d-block w-100">
+                <a target="_blank" href="https://www.linkedin.com/in/ingkaren/">Karen is hands down one of the most naturally gifted designers or front-end
+                developers I've had the pleasure to work with. Whenever Karen was not around, we immediately found
+                ourselves struggling because she was so vital to our developments it became clear how much the team
+                relied on her - so much so that we are having to hire two people to replace Karen. Any team would be
+                lucky to have someone even remotely as hard working and skilled as Karen.</a>
+                <hr align="right" />
+                <span class="recommendation-name">Tim Douglas</span>
+                <span class="recommendation-role">Principal Engineer</span>
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="d-block w-100">
+                <a target="_blank" href="https://www.linkedin.com/in/ingkaren/">Karen was a dedicated, thorough and efficient colleague. She has a rather unique
+                mix of both technical and design skills: she fulfilled the role of both a JavaScript developer and a
+                promising UX designer.
+
+                Whatever the task at hand, Karen puts in lots of effort and discusses what is required with the team in
+                order to make sure her results are exemplary. She is able to manage multiple competing priorities and
+                complete the work quickly but to an excellent standard.</a>
+                <hr align="right" />
+                <span class="recommendation-name">Neil Poole</span>
+                <span class="recommendation-role">Software Tester</span>
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="d-block w-100">
+                <a target="_blank" href="https://www.linkedin.com/in/ingkaren/">It was wonderful to have Karen working with us at Actual Experience. Karen is
+                very talented and dedicated to her work, constantly developing her skills and showing great commitment
+                to getting results. Karen is also a thoroughly professional team member who fitted well into our
+                organisation and was much appreciated by her team. Karen has a bright future ahead of her.</a>
+                <hr align="right" />
+                <span class="recommendation-name">Vincent Lerigo-Smith</span>
+                <span class="recommendation-role">Professional Developement Manager</span>
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="d-block w-100">
+                <a target="_blank" href="https://www.linkedin.com/in/ingkaren/">Karen was a pleasure to work with and consistently demonstrated an excellent
+                attitude and hunger to learn. She rapidly became a capable and valued part of the UI/UX team at Actual
+                and made significant contributions to the success of the product.</a>
+                <hr align="right" />
+                <span class="recommendation-name">Ben Burns</span>
+                <span class="recommendation-role">Chief Product Officer</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-knowledge section">
+        <h2 class="subtitle">TECHNICAL AND SOFTWARE KNOWLEDGE</h2>
+        <ul class="knowledge-list">
+          <li>
+            IT, web hosting services, VCS (Git), web development (HTML, CSS, SCSS, JS, JQuery, npm, webpack),
+            coding (Java, Processing), design (Graphic design and UX design), as well as excellent time
+            management and adaptability.
+          </li>
+          <li>
+            Adobe Creative Suite, Sketch, Axure, FramerX, Microsoft Office Suite, CMS (Joomla!, Wordpress), Filezilla,
+            Text editors (Sublime, VS), entre otros.
+          </li>
+        </ul>
+      </div>
+      <div class="about-languages section">
+        <h2 class="subtitle">LANGUAGES</h2>
+        <p>Spanish and English.</p>
+      </div>
+      <div class="about-acknowledgements section">
+        <h2 class="subtitle">ACHIEVEMENTS AND ACKNOWLEDGEMENTS</h2>
+        <ul>
+          <li>
+            2nd place at the Premios Incluir 2012 (Bogotá-Colombia) with the project "Iris Mouse" which was presented as
+            a <strong>Proposal of new applications</strong>. The event was sponsored by the Ministry of Information and
+            Communications Technologies & Fundación Saldarriaga Concha.
+          </li>
+          <li>
+            Winner of the Actual Experience Frisbee Challenge 2017 at the TechSPARK event (Bath-UK). The creation was
+            made using Photoshop and the very well-known starwars' scene.
+          </li>
+          <img src="../assets/images/starwarsAE.jpg" alt="Frisbee Challenge" width="100%" height="auto" />
+        </ul>
+      </div>
+      <div class="about-academic section">
+        <h2 class="subtitle">ACADEMIC WORK</h2>
+        <h3>Academic speeches</h3>
+        <ul>
+          <li>
+            Generación Z: Nuevos paradigmas para la interacción en el desarrollo de aplicaciones.
+            <br/>
+            <a class="view-more-button hyperlink" target="_blank"
+              href="http://festivaldelaimagen.com/wp-content/uploads/2017/07/KAREN_Alonso-Zarate.pdf ">View more</a>
+          </li>
+          <li>
+            Multimedia educativa interactiva basada en realidad aumentada.
+            <br/>
+            <a class="view-more-button hyperlink" target="_blank" href="../downloadDocs/Alonso-Quintero2013.docx">View more</a>
+          </li>
+          <li>
+            Propuesta Metodológica para la implementación de campus inteligentes universitarios: Geolocalización indoor.
+            <br/>
+            <a class="view-more-button hyperlink" target="_blank"
+              href="http://www.idee.es/resources/presentaciones/JIIDE14/20141107/CampusInteligentesUniversitarios.pdf">View
+              more</a>
+          </li>
+          <li>
+            Construcción de geodatabase para sistema de navegación del Campus Inteligente Nueva Granada.
+            <br/>
+            <a class="view-more-button hyperlink" target="_blank" href="../downloadDocs/CardenasAlonso.pdf">View more</a>
+          </li>
+
+        </ul>
+        <h3>Academic posters</h3>
+        <ul>
+          <li>
+            ¿Sistemas que crean?
+            <br/>
+            <a class="view-more-button hyperlink" target="_blank" href="../downloadDocs/AlonsoSierra.pdf">View more</a>
+          </li>
+          <li>
+            Campus Inteligente Nueva Granada.
+            <br/>
+            <a class="view-more-button hyperlink" target="_blank"
+              href="https://conectate.uniandes.edu.co/contenido/innova-te_330/doc/Innovate-330.pdf">View more</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

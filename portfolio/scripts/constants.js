@@ -1,0 +1,1 @@
+ var root = "file:///D:/proyectos-react/karen2105.github.io/portfolio/";

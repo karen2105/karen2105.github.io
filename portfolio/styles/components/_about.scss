@@ -1,0 +1,178 @@
+#about {
+  display: grid;
+  
+  @media screen and (min-width: 1025px) {
+    grid-template-areas: 
+    "left-content menu-nav"
+    "left-content right-content";
+    grid-template-columns: 42.5% 57.5%;
+    grid-template-rows: 47px auto;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    grid-template-areas: 
+    "menu-nav"
+    "left-content" 
+    "right-content";
+    grid-template-rows: 47px auto auto;
+    min-height: 100%;
+  }
+
+  #main-nav-bar {
+    grid-area: menu-nav;
+  }
+
+  .about-container-left {
+    grid-area: left-content;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 10% 0;
+    
+    @media screen and (min-width: 1025px) {
+      max-height: 100vh;
+      background: transparent url("../assets/images/about-back.jpg") top left/cover no-repeat;
+      background-size: auto 100%;
+      overflow: hidden;
+    }
+
+    @media screen and (max-width: 1024px) {
+      background: transparent url("../assets/images/about-back.jpg") bottom left/cover no-repeat;
+      background-size: 100% auto;
+    }
+
+    .content-wrapper {
+      flex: 1 0 auto;
+      text-align: center;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+    }
+  
+    .photo-container {
+      width: 100%;
+      margin: 7% 0 2%;
+      text-align: center;
+    }
+  }
+
+  .about-container-right {
+    position: relative;
+    grid-area: right-content;
+    flex: 1 0 auto;
+    opacity: 0;
+    transition: all .5s ease-in;
+
+    &.show {
+      opacity: 1;
+    }
+    
+    @media screen and (min-width: 1025px) {
+      max-height: 100vh;
+      overflow: auto;
+    }
+    
+    .about-content {
+      padding: 20px 6% 50px; 
+    }
+
+    .section {
+      margin-top: 10%;
+
+      ul {
+        list-style: none;
+  
+        li {
+          margin-bottom: 10px;
+  
+          &::before {
+            content: "\2022";
+            color: $primary-colour;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1.3em;
+          }
+        }
+      }
+    }
+
+    h2.subtitle {
+      margin-bottom: 1.2rem;
+    }
+
+    .about-acknowledgements {
+      img {
+        top: -15px;
+        transform: scale(0.7);
+        opacity: 0;
+        transition: all .3s ease;
+
+        &.show {
+          top: -15px;
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+    }
+
+    .about-linkedin {
+      .carousel-item {
+        text-align: right;
+        min-height: 290px;
+
+        p {
+          font-style: italic;
+          font-size: 1.15rem;
+
+          a {
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+              color: inherit;
+            }
+          }
+        }
+
+        .recommendation-name {
+          display: block;
+          font-style: initial;
+          font-weight: bold;
+          font-size: 1.1em;
+        }
+
+        .recommendation-role {
+          font-size: 0.9em;
+        }
+
+        hr {
+          width: 250px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .footer-icons {
+    svg.icon {
+      fill: rgba(96,96,96, 0.7);
+      color: rgba(96,96,96, 0.7);
+
+      &:hover {
+        fill: rgba(96,96,96, 1);
+        color: rgba(96,96,96, 1);
+      }
+    }
+  }
+  .footer-copy {
+    color: #606060;
+  }
+  
+}
+

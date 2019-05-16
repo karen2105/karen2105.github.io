@@ -1,0 +1,112 @@
+$primary-colour: #D82B37;
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family:'Open Sans', Helvetica, sans-serif;
+  font-size: 16px;
+  color: #212121;
+}
+
+h1 {
+  font-family: 'Merienda One', Helvetica, 'Open Sans', sans-serif;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: $primary-colour;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+address {
+  display: inline;
+}
+
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  padding: 0;
+}
+
+input, textarea {
+  overflow: visible;
+  border-radius: 5px;
+  border: 1px solid #b9b9b9;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+
+  &:focus {
+    border: 1px solid #007bff;
+    box-shadow:#007bff80 0px 0px 2px;
+  }
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: #007bff;
+
+  &.hyperlink::after {
+    content: '';
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    width: 0;
+    border-bottom: 1px solid #007bff;
+    transition: all .5s ease;
+  }
+
+  &.hyperlink:hover {
+    text-decoration: none;
+    color: #007bff;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -50px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDelayed {
+  0% {opacity: 0;}
+
+  50% {opacity: 0;}
+
+  100% {opacity: 1;}
+}

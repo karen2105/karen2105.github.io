@@ -1,0 +1,36 @@
+<body>
+  <script>
+    $(function() {
+      var iconsSocialMedia = [
+        `${root}assets/SVG/linkedin.html`,
+        `${root}assets/SVG/github.html`,
+        `${root}assets/SVG/pinterest.html`,
+        `${root}assets/SVG/skype.html`
+      ];
+
+      var iconHref = [
+        "https://www.linkedin.com/in/ingkaren/",
+        "https://github.com/karen2105/karen2105.github.io",
+        "https://co.pinterest.com/ingkarenalonso/",
+        "skype:ingkaren.alonso?call"
+      ];
+
+      createIconsFooter(iconsSocialMedia, iconHref);
+
+      function createIconsFooter(iconsSocialMedia, iconHref) {
+        $.each(iconsSocialMedia, function(index, value) {
+          var container = `<a target="_blank" class="footer-icon-container" href=${
+            iconHref[index]
+          }></a>`;
+
+          $(container)
+            .appendTo(".footer-icons")
+            .append($("<span>").load(value));
+        });
+      }
+    });
+  </script>
+
+  <div class="footer-icons"></div>
+  <div class="footer-copy">Copyright © 2019 Karen Alonso Zarate</div>
+</body>

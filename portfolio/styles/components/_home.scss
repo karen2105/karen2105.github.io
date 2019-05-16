@@ -1,0 +1,77 @@
+#home {
+  overflow: hidden;
+  background: url("../assets/images/background-home.jpg") top center/cover no-repeat fixed padding-box content-box;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.home-content {
+  flex: 1 1 auto;
+  padding: 5% 16% 0%;
+  animation-name: fadeInDelayed;
+  animation-duration: 2000ms;
+  animation-timing-function: ease;
+  
+  h1 {
+    margin-bottom: 1.3rem;
+  }
+
+  h3 {
+    font-weight: bold;
+  }
+
+  #home-content-icons {
+    margin: 35px 0;
+    
+    svg.icon {
+      position: relative;
+      top: 0px;
+      height: 40px;
+      width: auto;
+      margin-right: 30px;
+      margin-bottom: 15px;
+      fill: #214F72;
+      color: #214F72;
+      opacity: 0.7;
+      transition: all 200ms ease;
+      cursor: pointer;
+
+      &:hover {
+        top: -10px;
+        fill: darken(#214F72, 10%);
+        color: darken(#214F72, 10%);
+        opacity: 1;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  padding: 15px 0 8px;
+}
+
+.contact-text {
+  font-size: 0.85rem;
+}
+
+//Animation
+
+.hola-text {
+  opacity: 0;
+  animation: appearDisappear;
+  animation-duration: 4000ms;
+  animation-timing-function: ease;
+}
+
+@keyframes appearDisappear {
+  0%   {opacity: 0;}
+  25%  {opacity: 1;}
+  75%  {opacity: 1;}
+  100% {opacity: 0;}
+}
