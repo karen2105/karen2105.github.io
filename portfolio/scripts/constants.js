@@ -1,1 +1,0 @@
- var root = "http://karen-alonso.co/";
